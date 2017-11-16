@@ -15,22 +15,17 @@
     "build": "babel src/ -d build/",
     "dev": "nodemon src/app.js --config ./nodemon-app.json",
     "dist": "npm install && babel src/ -d build/",
-    "test": "ava"
+    "test": ""
   },
   "dependencies": {
     "koa": "^2.2.0",
     "koa-bodyparser": "^2.5.0",
     "koa-router": "^7.1.1",
-    "koa-static-cache": "^3.1.7",
-    "koa-generic-session": "^1.11.3",
-    "koa-convert": "^1.2.0",
     "lodash": "^4.17.4",
-    "request": "^2.81.0",
-    "request-promise": "^4.2.0",
-    "winston": "^2.3.1"
+    "winston": "^2.3.1",
+    "mkdirp": "^0.5.1",
   },
   "devDependencies": {
-    "ava": "^0.19.1",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
     "babel-plugin-add-module-exports": "^0.2.1",
