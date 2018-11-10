@@ -1,16 +1,16 @@
 {
-  "name": "{{context.basic.name}}",
+  "name": "<%= context.basic.name %>",
   "version": "0.1.0",
   "description": "",
-  {% if context.npm.private == true %}
+  <% if(context.npm.private) { %>
   "private": true,
-  {% endif %}
+  <% } %>
   "repository": {
     "type": "git",
     "url": "https://code.aliyun.com/YanRongTech/cloud-service.git"
   },
-  "author": "{{context.basic.author}}",
-  "license": "{{ context.npm.license }}",
+  "author": "<%= context.basic.author %>",
+  "license": "<%=  context.npm.license %>",
   "scripts": {
     "build": "babel src/ -d build/",
     "dev": "nodemon src/app.js --config ./nodemon-app.json",
